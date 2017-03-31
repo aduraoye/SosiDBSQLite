@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15DB5A50-8D15-4052-B5E7-442F353582D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SosiDB</RootNamespace>
+    <AssemblyName>SosiDB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SosiDB.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.0.4.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\OneDrive\Projects\SosiDBShchedSQLiteZ\SosiDB\bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.32.2608.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClickSendSMS.cs" />
+    <Compile Include="ComboBox_Ad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboBox_Ad.designer.cs">
+      <DependentUpon>ComboBox_Ad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelReport.cs" />
+    <Compile Include="FmChangeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmChangeLogin.designer.cs">
+      <DependentUpon>FmChangeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAccounts.Designer.cs">
+      <DependentUpon>FmAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBankLodge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBankLodge.Designer.cs">
+      <DependentUpon>FmBankLodge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmEmailPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmEmailPad.Designer.cs">
+      <DependentUpon>FmEmailPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmFirstTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmFirstTimer.Designer.cs">
+      <DependentUpon>FmFirstTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmForeignCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmForeignCurrency.Designer.cs">
+      <DependentUpon>FmForeignCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmInsatlLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmInsatlLogin.Designer.cs">
+      <DependentUpon>FmInsatlLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmLogin.Designer.cs">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmOfferingInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmOfferingInput.Designer.cs">
+      <DependentUpon>FmOfferingInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmRecords.Designer.cs">
+      <DependentUpon>FmRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmRegNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmRegNew.Designer.cs">
+      <DependentUpon>FmRegNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmRoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmRoster.Designer.cs">
+      <DependentUpon>FmRoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmSchedulerMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmSchedulerMonitor.Designer.cs">
+      <DependentUpon>FmSchedulerMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmUsers.Designer.cs">
+      <DependentUpon>FmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageImageList.cs" />
+    <Compile Include="PrintPreviewXCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintPreviewXDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPreviewXDialog.designer.cs">
+      <DependentUpon>PrintPreviewXDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ComboBox_Ad.resx">
+      <DependentUpon>ComboBox_Ad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmChangeLogin.resx">
+      <DependentUpon>FmChangeLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmAccounts.resx">
+      <DependentUpon>FmAccounts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBankLodge.resx">
+      <DependentUpon>FmBankLodge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmEmailPad.resx">
+      <DependentUpon>FmEmailPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmFirstTimer.resx">
+      <DependentUpon>FmFirstTimer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmForeignCurrency.resx">
+      <DependentUpon>FmForeignCurrency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmInsatlLogin.resx">
+      <DependentUpon>FmInsatlLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmLogin.resx">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmOfferingInput.resx">
+      <DependentUpon>FmOfferingInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmRecords.resx">
+      <DependentUpon>FmRecords.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmRegNew.resx">
+      <DependentUpon>FmRegNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmRoster.resx">
+      <DependentUpon>FmRoster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmSchedulerMonitor.resx">
+      <DependentUpon>FmSchedulerMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmUsers.resx">
+      <DependentUpon>FmUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreviewXCtrl.resx">
+      <DependentUpon>PrintPreviewXCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreviewXDialog.resx">
+      <DependentUpon>PrintPreviewXDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBox_Ad.resx">
+      <DependentUpon>TextBox_Ad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RepondsCode.cs" />
+    <Compile Include="TextBox_Ad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBox_Ad.designer.cs">
+      <DependentUpon>TextBox_Ad.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SosiDB.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
